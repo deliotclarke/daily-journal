@@ -33,13 +33,12 @@ function addEntry(entry) {
 const makeJournalEntryComponent = (journalEntry) => {
   return `<div class="card one">
           <header class="header">
-          <h2>${journalEntries.date}</h2>
+          <h2>${journalEntry.date}</h2>
           </header>
           <main>
-          <h3>${journalEntries.workingTopic}</h3>
-          <p>${journalEntries.jEntry}</p>
-          <h4>Mood: ${journalEntries.mood}</h4>
+          <h3>${journalEntry.workingTopic}</h3>
+          <p>${journalEntry.jEntry}</p>
+          <h4>Mood: ${journalEntry.mood}</h4>
           </main>
-
           </div>`
 }
