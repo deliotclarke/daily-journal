@@ -1,3 +1,12 @@
+/* 
+the dark - #070F16
+the green - #22822E
+the yellow - #FFCB2B
+the beige - #F1E392
+the off-white - #F7F6E4
+
+*/
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -108,10 +117,65 @@ textarea {
     margin-top: 3em;
     margin-bottom: 5em;
     font-family: san-serif;
-    background-color: rgba(33, 127, 100, .8);
+    background-color: rgba(34, 130, 36, .8);
     box-shadow: 5px 10px 40px black;
     color: black;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: .8em;
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  max-width: 80%;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(255, 255, 255);;
+  min-height: 597px;
+  min-width: 320px;
+  max-height: 597px;
+  max-width: 320px;
+  margin: 1rem 1rem;
+  border: 0px solid transparent;
+  border-radius: .2rem;
+  box-shadow: 1px 2px 50px rgba(7, 15, 22, .5);
+}
+
+.header {
+  height: 15%;
+  width: auto;
+  padding: 3px 3px;
+  background-color: #070F16;
+  color: #FFCB2B;
+  font-size: 1.5rem;
+  border: 0px solid transparent;
+  border-top-right-radius: .2em;
+  border-top-left-radius: .2em;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.card main {
+    padding: 1rem 1rem;
+    color: #070F16;
+}
+
+.card h3 {
+    text-decoration: underline;
+}
+
+.card h4 {
+    color: #22822E;
+    font-weight: bolder;
+}
