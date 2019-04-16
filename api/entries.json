@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "date": "2019-04-08",
+      "concept": "group project",
+      "entry": "we're slowly learning how to work in groups. it's been fun.",
+      "mood": "pretty tight"
+    },
+    {
+      "date": "2019-04-10",
+      "concept": "javascript",
+      "entry": "started javascript. really happy to get going on that. stoked to get real confused.",
+      "mood": "sick sick sick"
+    },
+    {
+      "date": "2019-04-11",
+      "concept": "javascript objects",
+      "entry": "started objects today. remembered I need to make sure I pay really close attention to small details and not get too tripped up when I don't get it the first time",
+      "mood": "meh"
+    }
+  ]
+}
