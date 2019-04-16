@@ -1,24 +1,3 @@
-const journalEntries = [
-  {
-    date: '2019-04-08',
-    workingTopic: 'group project',
-    jEntry: "we're slowly learning how to work in groups. it's been fun.",
-    mood: 'pretty tight'
-  },
-  {
-    date: '2019-04-10',
-    workingTopic: 'javascript',
-    jEntry: 'started javascript. really happy to get going on that. stoked to get real confused.',
-    mood: 'sick sick sick'
-  },
-  {
-    date: '2019-04-11',
-    workingTopic: 'javascript objects',
-    jEntry: 'started objects today. remembered I need to make sure I pay really close attention to small details and not get too tripped up when I don\'t get it the first time',
-    mood: 'meh'
-  }
-];
-
 function addEntry(entry) {
   journalEntries.push(entry);
   console.log(journalEntries);
@@ -38,19 +17,22 @@ const makeJournalEntryComponent = (journalEntry) => {
           <h2>${journalEntry.date}</h2>
           </header>
           <main>
-          <h3>${journalEntry.workingTopic}</h3>
-          <p>${journalEntry.jEntry}</p>
+          <h3>${journalEntry.concept}</h3>
+          <p>${journalEntry.entry}</p>
           <h4>Mood: ${journalEntry.mood}</h4>
           </main>
           </div>`
 }
 
-const renderJournalEntries = (entries) => {
-  for (let i = 0; i < entries.length; i++) {
-    let entry = makeJournalEntryComponent(entries[i]);
-    wrapper.innerHTML += entry;
-    console.log(entry);
-  }
+const renderJournalEntries = (entry) => {
+  wrapper.innerHTML += entry;
 }
 
-renderJournalEntries(journalEntries);
+fetch("http://localhost:3000/entries")
+  .then(entries => entries.json())
+  .then(parsedEntries => {
+    parsedEntries.forEach(entry => {
+      const journalEntry = makeJournalEntryComponent(entry)
+      renderJournalEntries(journalEntry)
+    })
+  })
