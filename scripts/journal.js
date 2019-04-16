@@ -30,6 +30,8 @@ function addEntry(entry) {
 //   console.log(`${prop} is ${journalValue3[prop]}`);
 // }
 
+const wrapper = document.querySelector('.wrapper')
+
 const makeJournalEntryComponent = (journalEntry) => {
   return `<div class="card one">
           <header class="header">
@@ -42,3 +44,14 @@ const makeJournalEntryComponent = (journalEntry) => {
           </main>
           </div>`
 }
+
+const renderJournalEntries = (entries) => {
+  for (let i = 0; i < entries.length; i++) {
+    let entry = makeJournalEntryComponent(entries[i]);
+    wrapper.innerHTML += entry;
+    console.log(entry);
+
+  }
+}
+
+renderJournalEntries(journalEntries);

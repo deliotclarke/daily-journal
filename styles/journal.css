@@ -117,7 +117,7 @@ textarea {
     margin-top: 3em;
     margin-bottom: 5em;
     font-family: san-serif;
-    background-color: rgba(33, 127, 100, .8);
+    background-color: rgba(34, 130, 36, .8);
     box-shadow: 5px 10px 40px black;
     color: black;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -134,16 +134,16 @@ textarea {
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .card {
-  background-color: #F7F6E4;
+  background-color: rgba(255, 255, 255);;
   min-height: 597px;
   min-width: 320px;
   max-height: 597px;
   max-width: 320px;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   border: 0px solid transparent;
   border-radius: .2rem;
   box-shadow: 1px 2px 50px rgba(7, 15, 22, .5);
@@ -164,4 +164,18 @@ textarea {
 .header h2 {
   margin: 0;
   padding: 0;
+}
+
+.card main {
+    padding: 1rem 1rem;
+    color: #070F16;
+}
+
+.card h3 {
+    text-decoration: underline;
+}
+
+.card h4 {
+    color: #22822E;
+    font-weight: bolder;
 }
