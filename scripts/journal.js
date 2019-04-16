@@ -50,7 +50,6 @@ const renderJournalEntries = (entries) => {
     let entry = makeJournalEntryComponent(entries[i]);
     wrapper.innerHTML += entry;
     console.log(entry);
-
   }
 }
 
