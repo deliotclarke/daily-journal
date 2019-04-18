@@ -5,4 +5,9 @@
     Change the fake variable names below to what they should be
     to get the data and display it.
 */
-objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
+API.getJournalEntries().then(journalEntries => {
+  journalEntries.forEach(entry => {
+    const journalEntry = makeJournalEntryComponent(entry)
+    renderJournalEntries(journalEntry)
+  })
+});
