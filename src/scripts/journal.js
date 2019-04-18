@@ -7,7 +7,7 @@
 */
 API.getJournalEntries().then(journalEntries => {
   journalEntries.forEach(entry => {
-    const journalEntry = makeJournalEntryComponent(entry)
-    renderJournalEntries(journalEntry)
+    const journalEntry = buildEntry.makeEntryComponent(entry)
+    entriesToDOM.renderEntries(journalEntry)
   })
 });

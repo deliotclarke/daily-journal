@@ -1,5 +1,11 @@
+// const renderJournalEntries = (entry) => {
+//   wrapper.innerHTML += entry;
+// }
+
 const wrapper = document.querySelector('.wrapper')
 
-const renderJournalEntries = (entry) => {
-  wrapper.innerHTML += entry;
+const entriesToDOM = {
+  renderEntries(entry) {
+    wrapper.innerHTML += entry;
+  }
 }
