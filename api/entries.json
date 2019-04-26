@@ -17,6 +17,12 @@
       "concept": "javascript objects",
       "entry": "started objects today. remembered I need to make sure I pay really close attention to small details and not get too tripped up when I don't get it the first time",
       "mood": "meh"
+    },
+    {
+      "date": "2019-04-26",
+      "concept": "fetching objects",
+      "entry": "Just had the BIGGEST breakthough in my understanding of how fetching objects works. I had made fetching from two APIs and appending them to the DOM work, but I didn't understand how. Brenda sat down with me and talked me through what I did, which led to me realizing how easily I could manipulate an object that I've grabbed by even ADDING to it from ANOTHER API! WHAT?!?! So cool.",
+      "mood": "freaking totally stoked"
     }
   ]
 }
