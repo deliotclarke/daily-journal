@@ -20,7 +20,7 @@ const buildEntry = {
           <main>
           <h3>${journalEntry.concept}</h3>
           <p>${journalEntry.entry}</p>
-          <h4>Mood: ${journalEntry.mood}</h4>
+          <h4>mood: ${journalEntry.mood}</h4>
           </main>
           </div>`
   }

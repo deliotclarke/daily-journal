@@ -2,7 +2,7 @@
 //   wrapper.innerHTML += entry;
 // }
 
-const wrapper = document.querySelector('.wrapper')
+const wrapper = document.querySelector('#wrapper');
 
 const entriesToDOM = {
   renderEntries(entry) {

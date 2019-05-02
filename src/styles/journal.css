@@ -1,4 +1,4 @@
-/* 
+/*
 the dark - #070F16 - 7, 15, 22
 the green - #22822E
 the yellow - #FFCB2B
@@ -59,6 +59,7 @@ h1 {
     display: block;
     font-family: sans-serif;
     box-shadow: 5px 10px 40px black;
+    resize: none;
 }
 
 .date_container {
