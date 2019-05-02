@@ -21,9 +21,9 @@
 				<input type="date" class="form_date" id="date">
 			</div>
 			<label class="form_label">What we're working on:</label>
-			<input type="text" placeholder="prob something crazy" class="form_item" id="workingTopic">
+			<input type="text" placeholder="prob something crazy" class="form_item" id="workingConcept">
 			<label class="form_label">Journal Entry:</label>
-			<textarea class="form_item" rows="5" columns="8" id="jEntry">tell a thing...</textarea>
+			<textarea class="form_item" rows="5" columns="8" placeholder="tell a thing..." id="jEntry"></textarea>
 			<label class="special">This is a mood:</label>
 			<select class="form_select" id="mood">
 				<option>!choose from the following moods!</option>
@@ -37,14 +37,14 @@
 		</form>
 	</div>
 	<div class="button_div">
-		<button class="form_button">record it, my dude</button>
+		<button class="form_button" id="form_button">record it, my dude</button>
 	</div>
 
 	<!-- below is the wrapper for the journal entries to populate in -->
-	<div class="wrapper"></div>
+	<div class="wrapper" id="wrapper"></div>
 
-	<script src="scripts/data.js"></script>
 	<script src="scripts/entriesDOM.js"></script>
+	<script src="scripts/data.js"></script>
 	<script src="scripts/entryComponent.js"></script>
 	<script src="scripts/journal.js"></script>
 </body>
