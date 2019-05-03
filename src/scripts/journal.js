@@ -13,6 +13,7 @@ const entry = document.querySelector("#jEntry");
 const mood = document.querySelector("#mood");
 const saveBtn = document.querySelector("#form_button");
 const alert = document.querySelector("#alert_p");
+const radioBtns = document.getElementsByName("radio_entry");
 
 
 //populate DOM on load
@@ -97,3 +98,23 @@ const validateForm = (date, concept, entry, mood) => {
     return isValid;
   }
 }
+
+//uses radio buttons to find the mood in entries.json
+radioBtns.forEach(btn => {
+  btn.addEventListener("click", event => {
+    if (event.target.value === "all") {
+      update();
+    } else {
+      wrapper.innerHTML = "";
+      API.filterEntriesByMood(event.target.value)
+        .then(journalEntries => {
+          console.log(journalEntries);
+          journalEntries.forEach(entry => {
+            const journalEntry = buildEntry.makeEntryComponent(entry)
+            entriesToDOM.renderEntries(journalEntry)
+          })
+        })
+    }
+  })
+})
+
