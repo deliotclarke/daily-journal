@@ -50,11 +50,37 @@ saveBtn.addEventListener("click", () => {
   let newEntry = entry.value;
   let newMood = mood.value;
 
-  //create a new object to send
-  const newJournalEntry = entryFactory(newDate, newConcept, newEntry, newMood);
+  //validate values
+  if (validateForm(newDate, newConcept, newEntry, newMood)) {
 
-  //save the object to entries.json
-  API.saveJournalEntry(newJournalEntry).then(update)
+    //create a new object to send
+    const newJournalEntry = entryFactory(newDate, newConcept, newEntry, newMood);
+
+    //save the object to entries.json
+    API.saveJournalEntry(newJournalEntry).then(update)
+  }
 })
 
-// post.then(get).then(render)
+// function to check validation of form inputs
+
+const validateForm = (date, concept, entry, mood) => {
+  let isValid = false;
+  if (date !== "" && concept !== undefined && entry !== undefined && mood !== "!choose from the following moods!") {
+    if (concept.length >= 5 && concept.length <= 23) {
+      if (entry.length >= 5 && entry.length <= 425) {
+        isValid = true;
+        return isValid;
+      } else {
+        alert("Sorry, dude, your entry length isn't cutting it, make it longer or shorter to submit!")
+        return isValid;
+      }
+    } else {
+      alert("Sorry, topic length is not up to snuff! Make it longer or shorter, my dude.")
+      return isValid;
+    }
+  } else {
+    alert("Looks like you missed an entry field, try again!")
+    isValid = false;
+    return isValid;
+  }
+}
