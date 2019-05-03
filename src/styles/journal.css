@@ -39,10 +39,10 @@ h1 {
 }
 
 .form_container {
-    width: 35%;
-    margin: 0 auto;
+    width: 27rem;
     padding: 0;
     margin-top: 5em;
+    margin-left: 5rem;
     background-image: radial-gradient(circle, rgb(7, 15, 22), rgba(7, 15, 22, .95));
     border: 3px solid transparent;
     border-radius: 3px;
@@ -115,16 +115,19 @@ textarea {
     height: 3em;
     border: solid transparent;
     border-radius: 3px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 3em;
-    margin-bottom: 5em;
-    font-family: san-serif;
-    background-color: rgba(34, 130, 36, .8);
+    display: inline-block;
+    position: relative;
+    bottom: 0rem;
+    left: 9.5rem;
+    background-color: rgba(34, 130, 36);
     box-shadow: 5px 10px 40px black;
     color: black;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: .8em;
+}
+
+.form_button:focus {
+    outline: black;
 }
 
 .alert_wrapper {
@@ -150,7 +153,7 @@ textarea {
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 
 .card {

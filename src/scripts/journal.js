@@ -58,6 +58,12 @@ saveBtn.addEventListener("click", () => {
     //create a new object to send
     const newJournalEntry = entryFactory(newDate, newConcept, newEntry, newMood);
 
+    //clear fields
+    date.value = ""
+    concept.value = ""
+    entry.value = ""
+    mood.value = ""
+
     //save the object to entries.json
     API.saveJournalEntry(newJournalEntry).then(update)
   }
