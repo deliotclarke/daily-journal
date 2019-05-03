@@ -12,6 +12,8 @@ const concept = document.querySelector("#workingConcept");
 const entry = document.querySelector("#jEntry");
 const mood = document.querySelector("#mood");
 const saveBtn = document.querySelector("#form_button");
+const alert = document.querySelector("#alert_p");
+
 
 //populate DOM on load
 API.getJournalEntries().then(journalEntries => {
@@ -68,18 +70,23 @@ const validateForm = (date, concept, entry, mood) => {
   if (date !== "" && concept !== undefined && entry !== undefined && mood !== "!choose from the following moods!") {
     if (concept.length >= 5 && concept.length <= 23) {
       if (entry.length >= 5 && entry.length <= 425) {
+        alert.innerHTML = ""
+        document.querySelector(".alert_wrapper").style.display = "none";
         isValid = true;
         return isValid;
       } else {
-        alert("Sorry, dude, your entry length isn't cutting it, make it longer or shorter to submit!")
+        document.querySelector(".alert_wrapper").style.display = "block";
+        alert.innerHTML = "Sorry, dude, your entry length isn't cutting it, make it longer or shorter to submit!"
         return isValid;
       }
     } else {
-      alert("Sorry, topic length is not up to snuff! Make it longer or shorter, my dude.")
+      document.querySelector(".alert_wrapper").style.display = "block";
+      alert.innerHTML = "Sorry, topic length is not up to snuff! Make it longer or shorter, my dude."
       return isValid;
     }
   } else {
-    alert("Looks like you missed an entry field, try again!")
+    document.querySelector(".alert_wrapper").style.display = "block";
+    alert.innerHTML = "Looks like you missed an entry field, try again!"
     isValid = false;
     return isValid;
   }
