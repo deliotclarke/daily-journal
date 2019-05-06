@@ -10,7 +10,7 @@
 const date = document.querySelector("#date");
 const concept = document.querySelector("#workingConcept");
 const entry = document.querySelector("#jEntry");
-const mood = document.querySelector("#mood");
+const mood = document.querySelector("#mood");   // <----- i need to change the way this is displayed on the actual journal cards
 const saveBtn = document.querySelector("#form_button");
 const alert = document.querySelector("#alert_p");
 const radioBtns = document.getElementsByName("radio_entry");
