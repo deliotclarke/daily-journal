@@ -45,6 +45,23 @@ const API =
       },
       body: JSON.stringify(entry)
     }).then(response => response.json())
+  },
+  editEntry(id, entryObj) {
+    return fetch(`${APIurl}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(entryObj)
+    }).then(response => response.json());
+  },
+  deleteEntry(id) {
+    return fetch(`${APIurl}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json"
+      },
+    }).then(response => response.json())
   }
 }
 

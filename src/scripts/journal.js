@@ -58,6 +58,7 @@ saveBtn.addEventListener("click", () => {
 
     //create a new object to send
     const newJournalEntry = entryFactory(newDate, newConcept, newEntry, newMood);
+    console.log(newJournalEntry);
 
     //clear fields
     date.value = ""
@@ -84,16 +85,21 @@ const validateForm = (date, concept, entry, mood) => {
       } else {
         document.querySelector(".alert_wrapper").style.display = "block";
         alert.innerHTML = "Sorry, dude, your entry length isn't cutting it, make it longer or shorter to submit!"
+        alert.scrollIntoView()
         return isValid;
       }
     } else {
       document.querySelector(".alert_wrapper").style.display = "block";
       alert.innerHTML = "Sorry, topic length is not up to snuff! Make it longer or shorter, my dude."
+      alert.scrollIntoView()
       return isValid;
     }
   } else {
     document.querySelector(".alert_wrapper").style.display = "block";
     alert.innerHTML = "Looks like you missed an entry field, try again!"
+
+    //not working the way i'd like it to
+    alert.scrollIntoView(false, { behavior: "smooth", block: "center", inline: "center" })
     isValid = false;
     return isValid;
   }
