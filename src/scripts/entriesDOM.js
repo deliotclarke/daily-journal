@@ -6,6 +6,6 @@ const wrapper = document.querySelector('#wrapper');
 
 const entriesToDOM = {
   renderEntries(entry) {
-    wrapper.innerHTML += entry;
+    wrapper.appendChild(entry);
   }
 }

@@ -14,30 +14,51 @@
 	<header>
 		<h1>My Daily Journal</h1>
 	</header>
-	<div class="form_container">
-		<form>
-			<div class="date_container">
-				<label class="special date">Date:</label>
-				<input type="date" class="form_date" id="date">
+	<div class="top_div">
+		<div class="form_container">
+			<form>
+				<div class="date_container">
+					<label class="special date">Date:</label>
+					<input type="date" class="form_date" id="date">
+				</div>
+				<label class="form_label">What we're working on:</label>
+				<input type="text" placeholder="Enter topic..." class="form_topic" id="workingConcept">
+				<label class="form_label">Journal Entry:</label>
+				<textarea class="form_entry" rows="5" columns="8" placeholder="Enter journal entry..." id="jEntry"></textarea>
+				<label class="special">This is a mood:</label>
+				<select class="form_select" id="mood">
+					<option>!choose from the following moods!</option>
+					<option value="stoked">pretty stoked</option>
+					<option value="alright">man, i'm alright</option>
+					<option value="life">that's life tho, amiright?</option>
+					<option value="meh">meh</option>
+					<option value="bummer">friggin' bummerwave</option>
+					<option value="idk">i don't know, man. like a hundred?</option>
+				</select>
+			</form>
+			<div class="button_div">
+				<button class="form_button" id="form_button">record it, my dude</button>
 			</div>
-			<label class="form_label">What we're working on:</label>
-			<input type="text" placeholder="prob something crazy" class="form_item" id="workingConcept">
-			<label class="form_label">Journal Entry:</label>
-			<textarea class="form_item" rows="5" columns="8" placeholder="tell a thing..." id="jEntry"></textarea>
-			<label class="special">This is a mood:</label>
-			<select class="form_select" id="mood">
-				<option>!choose from the following moods!</option>
-				<option>pretty stoked</option>
-				<option>man, i'm alright</option>
-				<option>that's life tho, amiright?</option>
-				<option>meh</option>
-				<option>friggin' bummerwave</option>
-				<option>i don't know, man. like a hundred?</option>
-			</select>
-		</form>
+		</div>
+
+		<!-- below is the wrapper for the journal filter -->
+		<div class="filter_div">
+			<fieldset class="filter" id="journal_filter">
+				<legend>Filter Entries</legend>
+				<div class="radio_button_div">
+					<label for="radio_entry1"><input class="radio_input" type="radio" name="radio_entry" value="all" checked> all
+						entries</label>
+					<label for="radio_entry2"><input type="radio" name="radio_entry" value="stoked"> pretty stoked</label>
+					<label for="radio_entry3"><input type="radio" name="radio_entry" value="idk"> i don't know,
+						man</label>
+				</div>
+			</fieldset>
+		</div>
 	</div>
-	<div class="button_div">
-		<button class="form_button" id="form_button">record it, my dude</button>
+
+	<!-- below is the wrapper for the form validation alert -->
+	<div class="alert_wrapper">
+		<p id="alert_p"></p>
 	</div>
 
 	<!-- below is the wrapper for the journal entries to populate in -->

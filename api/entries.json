@@ -5,14 +5,14 @@
       "date": "2019-04-08",
       "concept": "group project",
       "entry": "we're slowly learning how to work in groups. it's been fun.",
-      "mood": "pretty tight"
+      "mood": "alright"
     },
     {
-      "id": 2,
       "date": "2019-04-10",
       "concept": "javascript",
-      "entry": "started javascript. really happy to get going on that. stoked to get real confused.",
-      "mood": "sick sick sick"
+      "entry": "started javascript. really happy to get going on that. stoked to get real confused. and now we're edited?",
+      "mood": "idk",
+      "id": 2
     },
     {
       "id": 3,
@@ -26,20 +26,20 @@
       "date": "2019-04-26",
       "concept": "fetching objects",
       "entry": "Just had the BIGGEST breakthough in my understanding of how fetching objects works. I had made fetching from two APIs and appending them to the DOM work, but I didn't understand how. Brenda sat down with me and talked me through what I did, which led to me realizing how easily I could manipulate an object that I've grabbed by even ADDING to it from ANOTHER API! WHAT?!?! So cool.",
-      "mood": "freaking totally stoked"
+      "mood": "stoked"
     },
     {
       "date": "2019-05-02",
       "concept": "factory functions",
       "entry": "i kind of love factory functions, the utilitarian nature of them is pretty awesome. just make this thing for me, please. we also had a small panel of NSS grads come in today to talk about their experiences with networking during and after their time here. it was enlightening and a great chance to chat with some people that were in our position not that long ago.",
-      "mood": "man, i'm alright",
+      "mood": "alright",
       "id": 5
     },
     {
       "date": "2019-05-02",
       "concept": "saving/displaying user input",
       "entry": "bryan and i just spent about an hour and a half trying to get this journal to update when you submit the info. brenda fixed it in about 3 minutes. i'm frustrated but at the important thing is... IT WORKS! ",
-      "mood": "i don't know, man. like a hundred?",
+      "mood": "idk",
       "id": 6
     }
   ]
