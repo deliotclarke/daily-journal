@@ -72,7 +72,8 @@ const buildEntry = {
     let cardMood = document.createElement("h4");
     cardMood.textContent = `mood: ${journalEntry.mood}`;
     setAttributes(cardMood, {
-      id: `cardMood_${journalEntry.id}`
+      id: `cardMood_${journalEntry.id}`,
+      value: `${journalEntry.mood}`
     })
     cardBody.appendChild(cardMood);
     journalCard.appendChild(cardBody);
@@ -147,6 +148,7 @@ function editEntry(id) {
   })
   formBody.textContent = editBody.textContent
   editBody.replaceWith(formBody);
+
 
   let formMood = document.createElement("select");
   setAttributes(formMood, {
