@@ -258,3 +258,14 @@ textarea {
     color: #22822E;
     font-weight: bolder;
 }
+
+.edit_concept {
+    display: block;
+    margin: 1rem 0;
+}
+
+.edit_body {
+    width: 80%;
+    height: 10rem;
+    resize: none;
+}

@@ -8,13 +8,6 @@
       "mood": "alright"
     },
     {
-      "date": "2019-04-10",
-      "concept": "javascript",
-      "entry": "started javascript. really happy to get going on that. stoked to get real confused. and now we're edited?",
-      "mood": "idk",
-      "id": 2
-    },
-    {
       "id": 3,
       "date": "2019-04-11",
       "concept": "javascript objects",
@@ -41,6 +34,13 @@
       "entry": "bryan and i just spent about an hour and a half trying to get this journal to update when you submit the info. brenda fixed it in about 3 minutes. i'm frustrated but at the important thing is... IT WORKS! ",
       "mood": "idk",
       "id": 6
+    },
+    {
+      "date": "2019-05-16",
+      "concept": "finished nutshell",
+      "entry": "We finished our nutshell projects yesterday. I wish I could say it went really well, but I can at least say that I learned a lot. I had a brain stretching moment that felt like the scene in the grinch when his heart grows 3 sizes. I managed to wrap my head around nested event listeners and which made for some cool functionality in the end. I also learned promise.all which moving forward I plan to implement A LOT. ",
+      "mood": "meh",
+      "id": 7
     }
   ]
 }
